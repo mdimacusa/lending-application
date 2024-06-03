@@ -11,7 +11,9 @@ It is a admin side application for lending business
 ## Techstack
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100" alt="Laravel Logo"></a></p> 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/7e53f514-c87c-45aa-8a03-b14de478a9e9" width="100" alt="Laravel Logo"></a></p> 
-- Jquery - Bootstrap - Mysql
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/aa7e3c59-9870-4894-83f5-df3277c9f093" width="100" alt="Laravel Logo"></a></p> 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/30e926d3-9d76-4165-aaed-eb7a260488c6" width="100" alt="Laravel Logo"></a></p> 
 
 ## How to use this application
 Step 1. Clone the repository with git clone<br><br>
