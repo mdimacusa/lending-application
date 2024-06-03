@@ -35,6 +35,13 @@ Step 5. Just put the app password credential on .env like the format below just 
     <p>MAIL_FROM_ADDRESS="no-reply@gmail.com"</p>
     <p>MAIL_FROM_NAME="Angels Mini Lending"</p>
     
+# Login Credential    
+email: superadmin@gmail.com<br>
+password: admin123
+pincode: 1111
+role: Super Administrator
+
+
 ## Features
 
 - Dashboard : Show all important data and shows here the list of the borrowers who will due in 5 days
