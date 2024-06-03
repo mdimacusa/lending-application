@@ -31,7 +31,7 @@ It is a admin side application for lending business
 - Overall Loan : It shows here list of all of paid loan and you can export excel report
 - Fund history : It shows here Debit and Credit Fund and you can export excel report
 - Top borrower : It shows here the list of the borrower in order from highest to lowest amount borrowed and you can export excel report
-- Roles and Permission  : Super admin can add,edit,delete roles and permissiom , you can give permission to admin
+- Roles and Permission  : Super admin can add,edit,delete roles and permissiom , you can give permission to admin and staff
   
 #Note : You can search and filter all the data listed
 
