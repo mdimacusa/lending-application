@@ -15,6 +15,7 @@ It is a admin side application for lending business
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/642aab6d-80c9-4096-b0e9-adf6509446a2" width="65" alt="Laravel Logo"></a>
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/30e926d3-9d76-4165-aaed-eb7a260488c6" width="70" alt="Laravel Logo"></a>
 </div>
+<br>
 ## How to use this application
 Step 1. Clone the repository with git clone<br><br>
 Step 2. Create "lendingapp" Database on Mysql<br><br>
