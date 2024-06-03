@@ -9,7 +9,7 @@ It is a admin side application for lending business
 </p>
 
 ## Techstack
-<p align="center">
+<p align="left">
 <a href="" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/c9421b24-45b2-4c20-849c-7373ee673459" width="120" ></a> 
 <a href="" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/7e53f514-c87c-45aa-8a03-b14de478a9e9" width="120" ></a>
 <a href="" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/642aab6d-80c9-4096-b0e9-adf6509446a2" width="65" ></a>
