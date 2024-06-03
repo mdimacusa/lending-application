@@ -18,7 +18,7 @@ It is a admin side application for lending business
 </p>
 
 ## Techstack
-Laravel|Jquery|Bootstrap|Mysql
+Laravel - Jquery - Bootstrap - Mysql
 
 ## How to use this application
 Step 1. Clone the repository with git clone<br>
