@@ -16,6 +16,9 @@ It is a admin side application for lending business
 <a href="" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/30e926d3-9d76-4165-aaed-eb7a260488c6" width="70" ></a>
 </p>
 
+## Design Pattern
+- Service Layer
+
 ## How to use this application
 Step 1. Clone the repository with git clone<br><br>
 Step 2. Create "lendingapp" Database on Mysql<br><br>
