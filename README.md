@@ -35,7 +35,7 @@ Step 5. Just put the app password credential on .env like the format below just 
     <p>MAIL_FROM_ADDRESS="no-reply@gmail.com"</p>
     <p>MAIL_FROM_NAME="Angels Mini Lending"</p>
     
-##Features
+## Features
 
 - Dashboard : Show all important data and shows here the list of the borrowers who will due in 5 days
 - Borrow : The client can borrow fund from the company
