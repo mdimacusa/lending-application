@@ -37,9 +37,9 @@ Step 5. Just put the app password credential on .env like the format below just 
     
 #Login Credential    
 email: superadmin@gmail.com<br>
-password: admin123
-pincode: 1111
-role: Super Administrator
+password: admin123<br>
+pincode: 1111<br>
+role: Super Administrator<br>
 
 
 ## Features
