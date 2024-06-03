@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100" alt="Laravel Logo"></a></p>
-
 ## Lending Application
 
 It is a admin side application for lending business
@@ -11,7 +9,7 @@ It is a admin side application for lending business
 </p>
 
 ## Techstack
-Laravel - Jquery - Bootstrap - Mysql
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100" alt="Laravel Logo"></a></p> - Jquery - Bootstrap - Mysql
 
 ## How to use this application
 Step 1. Clone the repository with git clone<br><br>
