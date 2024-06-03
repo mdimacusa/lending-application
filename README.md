@@ -26,14 +26,14 @@ Step 2. Create "lendingapp" Database on Mysql
 Step 3. To create all tables on database "Run php artisan migrate:fresh --seed"
 Step 4. If you want to run send mail on lending app, you have to create your own credential. Check this link -> https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237
 Step 5. Just put the app password credential on .env like the format below just change the MAIL_USERNAME and MAIL_PASSWORD:
-    MAIL_MAILER=smtp
-    MAIL_HOST=smtp.gmail.com
-    MAIL_PORT=587
-    MAIL_USERNAME=YOUR_EMAIL
-    MAIL_PASSWORD=YOUR_APP_PASSWORD
-    MAIL_ENCRYPTION=tls
-    MAIL_FROM_ADDRESS="no-reply@gmail.com"
-    MAIL_FROM_NAME="Angels Mini Lending"
+    <p>MAIL_MAILER=smtp</p>
+    <p>MAIL_HOST=smtp.gmail.com</p>
+    <p>MAIL_PORT=587</p>
+    <p>MAIL_USERNAME=YOUR_EMAIL</p>
+    <p>MAIL_PASSWORD=YOUR_APP_PASSWORD</p>
+    <p>MAIL_ENCRYPTION=tls</p>
+    <p>MAIL_FROM_ADDRESS="no-reply@gmail.com"</p>
+    <p>MAIL_FROM_NAME="Angels Mini Lending"</p>
     
 #Features
 
