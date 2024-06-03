@@ -21,11 +21,11 @@ It is a admin side application for lending business
 Laravel|Jquery|Bootstrap|Mysql
 
 ## How to use this application
-Step 1. Clone the repository with git clone
-Step 2. Create "lendingapp" Database on Mysql
-Step 3. To create all tables on database "Run php artisan migrate:fresh --seed"
-Step 4. If you want to run send mail on lending app, you have to create your own credential. Check this link -> https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237
-Step 5. Just put the app password credential on .env like the format below just change the MAIL_USERNAME and MAIL_PASSWORD:
+Step 1. Clone the repository with git clone<br>
+Step 2. Create "lendingapp" Database on Mysql<br>
+Step 3. To create all tables on database "Run php artisan migrate:fresh --seed"<br>
+Step 4. If you want to run send mail on lending app, you have to create your own credential. Check this link -> https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237<br>
+Step 5. Just put the app password credential on .env like the format below just change the MAIL_USERNAME and MAIL_PASSWORD:<br>
     <p>MAIL_MAILER=smtp</p>
     <p>MAIL_HOST=smtp.gmail.com</p>
     <p>MAIL_PORT=587</p>
