@@ -40,7 +40,7 @@ Step 5. Just put the app password credential on .env like the format below just 
 - Dashboard : Show all important data and shows here the list of the borrowers who will due in 5 days
 - Borrow : The client can borrow fund from the company and it requires some agreement files
 - Deposit Fund : The admin can deposit fund and shows here the Credit fund
-- Payment :Can process loan, it shows here the amount borrowed and amount paid of the the client, you can also print and send mail the receipt for paid loan
+- Payment : Can process loan, it shows here the amount borrowed and amount paid of the the client, you can also print and send mail the receipt for paid loan, can also download agreement files.
 - Client : Can add,update and show the client list ,client transactions
 - Administrator : Can add,update and show the administrator list, transactions , deposits
 - Staff : Can add,update and show the staff list, transactions , deposits
@@ -48,7 +48,7 @@ Step 5. Just put the app password credential on .env like the format below just 
 - Overall Loan : It shows here list of all of paid loan and you can export excel report
 - Fund history : It shows here Debit and Credit Fund and you can export excel report
 - Top borrower : It shows here the list of the borrower in order from highest to lowest amount borrowed and you can export excel report
-- Roles and Permission  : Super admin can add,edit,delete roles and permissiom , you can give permission to admin and staff
+- Roles and Permission : Super admin can add,edit,delete roles and permissiom , you can give permission to admin and staff
   
 #Note : You can search and filter all the data listed
 
