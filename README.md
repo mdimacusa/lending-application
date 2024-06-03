@@ -10,7 +10,7 @@ It is a admin side application for lending business
 
 ## Techstack
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100" alt="Laravel Logo"></a></p> 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://ph.images.search.yahoo.com/search/images?p=jquery+logo+svg&fr=mcafee&type=E210PH91215G0&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F9%2F9e%2FJQuery_logo.svg%2F800px-JQuery_logo.svg.png#id=0&iurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F9%2F9e%2FJQuery_logo.svg%2F800px-JQuery_logo.svg.png&action=click" width="100" alt="Laravel Logo"></a></p> 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="![jquery-logo-png-transparent](https://github.com/mdimacusa/lending-application/assets/58607617/7e53f514-c87c-45aa-8a03-b14de478a9e9)" width="100" alt="Laravel Logo"></a></p> 
 - Jquery - Bootstrap - Mysql
 
 ## How to use this application
