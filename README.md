@@ -40,7 +40,7 @@ Step 5. Just put the app password credential on .env like the format below just 
 - Dashboard : Show all important data and shows here the list of the borrowers who will due in 5 days
 - Borrow : The client can borrow fund from the company
 - Deposit Fund : The admin can deposit fund and shows here the Credit fund
-- Payment :Can process loan, it shows here the amount borrowed and amount paid of the the client, you can also print the receipt for paid loan
+- Payment :Can process loan, it shows here the amount borrowed and amount paid of the the client, you can also print and send mail the receipt for paid loan
 - Client : Can add,update and show the client list ,client transactions
 - Administrator : Can add,update and show the administrator list, transactions , deposits
 - Company Income : It shows here all of the company profit and you can export excel report
