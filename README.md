@@ -9,7 +9,7 @@ It is a admin side application for lending business
 </p>
 
 ## Techstack
-<p>
+<p align="center">
 <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200" alt="Laravel Logo"></a> 
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/7e53f514-c87c-45aa-8a03-b14de478a9e9" width="120" alt="Laravel Logo"></a>
 <a href="https://laravel.com" target="_blank"><img src="https://github.com/mdimacusa/lending-application/assets/58607617/642aab6d-80c9-4096-b0e9-adf6509446a2" width="65" alt="Laravel Logo"></a>
