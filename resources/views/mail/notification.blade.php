@@ -8,7 +8,7 @@
 </head>
 <body>
 <div>
-    <p>Hello {{$transactions->first_name}} {{$transactions->surname}}</p>
+    <p>Hello {{$transactions->client->first_name}} {{$transactions->client->surname}}</p>
     <br><br>
     <strong>Thanks & Regards<br>Angel's Mini Lending</strong>
 </div>

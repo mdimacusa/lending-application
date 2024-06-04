@@ -118,7 +118,7 @@
                                 <div class="d-flex flex-stack">
                                     <div class="text-gray-700 fw-semibold fs-6 me-2">Client Unique ID</div>
                                     <div class="d-flex align-items-senter">
-                                        <span class="text-gray-900 fw-bolder fs-6">{{$response['query']->unique_id}}</span>
+                                        <span class="text-gray-900 fw-bolder fs-6">{{$response['query']->client->unique_id}}</span>
                                     </div>
                                 </div>
 

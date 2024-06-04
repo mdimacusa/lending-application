@@ -53,7 +53,7 @@
                                             <tr>
 												<td>{{$data->reference}}</td>
                                                 <td>₱{{$data->amount}}</td>
-												<td>{{$data->name}}</td>
+												<td>{{$data->user->name}}</td>
                                                 <td class="text-end">{{$data->created_at}}</td>
                                             </tr>
 											@endforeach

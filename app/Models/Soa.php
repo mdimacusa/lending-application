@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Soa extends Model
 {
     use HasFactory;
+    use \Znck\Eloquent\Traits\BelongsToThrough;
+
 
     protected $table = 'soa';
 

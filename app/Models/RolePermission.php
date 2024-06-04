@@ -10,4 +10,9 @@ class RolePermission extends Model
     use HasFactory;
 
     protected $table = 'role_permission';
+
+    public function permission()
+    {
+        return $this->hasMany(Permission::class);
+    }
 }

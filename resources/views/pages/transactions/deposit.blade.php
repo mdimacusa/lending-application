@@ -42,7 +42,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-5 fv-row">
                                         <label class="form-label mb-3 fs-9 fw-bold text-uppercase required">Pincode</label>
-                                        <input type="password" name="pincode" class="form-control" placeholder="Enter pincode">
+                                        <input type="password" name="pincode" class="form-control" placeholder="Enter pincode" maxlength="4">
                                         @error("pincode")
                                             <div class="text text-danger">{{ $message }}</div>
                                         @enderror

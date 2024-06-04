@@ -8,6 +8,7 @@ use App\Models\Payment;
 use App\Models\CompanyWallet;
 use App\Models\CompanyWalletHistory;
 use App\Models\Notification;
+use App\Models\User;
 use App\Interfaces\DepositFundServiceInterface;
 
 class DepositFundService implements DepositFundServiceInterface
@@ -29,23 +30,21 @@ class DepositFundService implements DepositFundServiceInterface
         $filters = $this->filters($request);
         extract($filters);
 
-        $query = CompanyWalletHistory::select('company_wallet_history.*','users.name')
-        ->join('users','users.id','=','company_wallet_history.user_id')
+        $query = CompanyWalletHistory::with('user')
         ->when(!empty($search),function($query)use($search){
             $query->where(function($query) use($search){
-                $query->orWhere('company_wallet_history.reference','like','%'.$search.'%')
-                    ->orWhere('company_wallet_history.amount','like','%'.$search.'%');
+                $query->orWhere('reference','like','%'.$search.'%')
+                    ->orWhere('amount','like','%'.$search.'%');
             });
         })
-        ->whereBetween('company_wallet_history.created_at',[($from ?? "0000-00-00")." 00:00:00",($to ?? date("Y-m-d"))." 23:59:59"])
-        ->where('company_wallet_history.status','CREDIT')
-        ->orderBy('company_wallet_history.created_at','DESC')
+        ->whereBetween('created_at',[($from ?? "0000-00-00")." 00:00:00",($to ?? date("Y-m-d"))." 23:59:59"])
+        ->where('status','CREDIT')
+        ->orderBy('created_at','DESC')
         ->when($rows=="All",function($query){
             return $query->get();
         },function($query)use($rows){
             return $query->paginate($rows ?? 10);
         });
-
         return ['query'=>$query,'filters'=> $filters];
     }
     public function get_company_wallet()

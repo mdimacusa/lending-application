@@ -11,4 +11,14 @@ class Payment extends Model
     use HasFactory;
 
     protected $table ='payment';
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function payment_account()
+    {
+        return $this->belongsTo(PaymentAccount::class);
+    }
 }

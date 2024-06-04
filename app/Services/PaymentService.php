@@ -475,8 +475,7 @@ class PaymentService implements PaymentServiceInterface
     public function show_payment_history($reference)
     {
 
-        $query = PaymentAccount::select('payment_account.*','client.unique_id')
-        ->join('client','client.id','=','payment_account.client_id')
+        $query = PaymentAccount::with('client:id,unique_id')
         ->where('payment_account.reference',$reference)
         ->first();
 
@@ -496,9 +495,7 @@ class PaymentService implements PaymentServiceInterface
     }
     public function print_payment_account($reference)
     {
-        $transactions = Soa::select('soa.*','client.first_name','client.email','users.name')
-        ->join('client','client.id','=','soa.client_id')
-        ->join('users','users.id','=','soa.user_id')
+        $transactions = Soa::with('user','client')
         ->where(['reference'=>$reference])
         ->first();
         $date = Carbon::createFromFormat('Y-m-d H:i:s', $transactions->disbursement_date)->format('d/m/Y');
@@ -533,9 +530,7 @@ class PaymentService implements PaymentServiceInterface
         }
     }
     public function mail_attachment($reference){
-        $transactions = Soa::select('soa.*','client.first_name','client.email','users.name')
-        ->join('client','client.id','=','soa.client_id')
-        ->join('users','users.id','=','soa.user_id')
+        $transactions = Soa::with('user','client')
         ->where(['reference'=>$reference])
         ->first();
         $date = Carbon::createFromFormat('Y-m-d H:i:s', $transactions->disbursement_date)->format('d/m/Y');
@@ -549,7 +544,7 @@ class PaymentService implements PaymentServiceInterface
         $pdf = PDF::loadView('pdf.invoice', compact('response'));
         Mail::send('mail.notification',$response, function($message)use($response,$pdf)
         {
-            $message->to($response['transactions']->email)
+            $message->to($response['transactions']->client->email)
                     ->subject("Angels Mini Lending Invoice Attachment")
                     ->attachData($pdf->output(), "aml-invoice_".$response['transactions']->reference.".pdf")
                     ->from(env('MAIL_USERNAME'));
