@@ -27,6 +27,12 @@
                     font-weight: 600;
                     font-family: Inter, Helvetica, sans-serif;
                 }
+                .bg-body{
+                    border-left: #C8ACC5 5px solid!important;
+                    border-bottom: #C8ACC5 5px solid!important;
+                    border-right: #BA9FCC 5px solid!important;
+                    border-top: #BA9FCC 5px solid!important;
+                }
             </style>
 			<div class="d-flex flex-column flex-center flex-column-fluid">
 				<div class="d-flex flex-center w-lg-50 p-10">
