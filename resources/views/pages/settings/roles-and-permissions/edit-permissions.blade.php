@@ -49,10 +49,10 @@
                                     <div class="row">
                                         @foreach($response['permissions'] as $key => $module)
                                             <div class="col-md-4 col-12 mb-2">
-                                            <h3 class="fs-6 fw-semibold mb-4">{{ucfirst($module->module)}}</h3>
+                                            <h3 class="fs-6 fw-semibold mb-4">{{ucfirst($module['module'])}}</h3>
                                             <div class="separator separator-dashed my-3"></div>
                                                 <div class="row mb-4">
-                                                    @foreach($module->permission as $permission)
+                                                    @foreach($module['permission'] as $permission)
                                                     <div class="col-12">
 
                                                         <div class="form-check form-check-inline mb-2">

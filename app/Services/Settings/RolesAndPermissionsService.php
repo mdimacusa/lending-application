@@ -98,17 +98,25 @@ class RolesAndPermissionsService implements RolesAndPermissionsServiceInterface
         $role         = $this->get_role($role_id);
         $permissions  = $this->get_distinct_permission();
 
-        foreach($permissions as $key => $module){
+        $permission   = Permission::select('permission.*',DB::raw('role_permission.id is not null as status'))
+                        ->leftJoin('role_permission',function($join) use($role){
+                        $join->on('role_permission.permission_id','=','permission.id')
+                            ->where('role_permission.role_id',$role->id);
+                        })
+                        ->orderBy('permission.id','asc')
+                        ->get()->toArray();
 
-            $permissions[$key]->permission = Permission::select('permission.*',DB::raw('role_permission.id is not null as status'))
-            ->leftJoin('role_permission',function($join) use($role){
-            $join->on('role_permission.permission_id','=','permission.id')
-                ->where('role_permission.role_id',$role->id);
-            })
-            ->where('module',$module->module)
-            ->orderBy('permission.id','asc')
-            ->get();
-        }
+        //reorder permission , align in module data
+        $reorder_data = array_reduce($permission, function($carry, $item) {
+            $module = $item['module'];
+            unset($item['module']);
+            $carry[$module]['module'] = $module;
+            $carry[$module]['permission'][] = (object)$item;
+            return $carry;
+        }, []);
+
+        //change data to array keys
+        $permissions = array_values($reorder_data);
 
         return ['permissions'=> $permissions,'role'=>$role];
     }
